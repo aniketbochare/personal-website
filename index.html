@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="dark" />
+<meta name="description" content="Aniket Bochare — Senior Engineering Manager · Technical Architect & Leader, GenAI and Conversational AI Platforms. Open to Sr Manager and Staff/Principal Architect/Leader roles. Kansas City area." />
+<link rel="icon" href="data:," />
+<title>Aniket Bochare — Sr Engineering Manager · Technical Architect &amp; Leader | GenAI &amp; Conversational AI</title>
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* EXECUTIVE DARK — deep navy / charcoal with sparing gold accents */
+  :root{
+    color-scheme:dark;
+    --bg:#0a0e14; --bg-2:#0d131c; --surface:#121a26; --surface-2:#182231;
+    --ink:#f3f1ea; --ink-2:#d8dee8; --muted:#a3aebc;
+    --line:#223047; --line-strong:#31435e;
+    --accent:#c9a24d; --accent-ink:#e6c87c; --accent-soft:#201b0f; --accent-soft-2:#2c2513;
+    --gold:#c9a24d; --gold-bright:#e6c87c; --on-accent:#171106;
+    --band:#0e1624;
+    --shadow:0 1px 2px rgba(0,0,0,.35),0 10px 28px rgba(0,0,0,.32);
+    --shadow-lg:0 2px 6px rgba(0,0,0,.4),0 24px 52px rgba(0,0,0,.45);
+    --radius:20px; --radius-sm:14px;
+    --ease:cubic-bezier(.22,.68,.26,1);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; scroll-padding-top:84px}
+  body{margin:0; background:linear-gradient(180deg,#0c1322 0%, var(--bg) 520px, var(--bg) 100%); color:var(--ink); font-family:"Public Sans",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; font-size:16.5px; line-height:1.65; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; overflow-x:hidden}
+  ::selection{background:var(--accent-soft-2); color:var(--accent-ink)}
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+  :focus-visible{outline:2.5px solid var(--accent); outline-offset:3px; border-radius:6px}
+  .wrap{max-width:1160px; margin:0 auto; padding:0 28px}
+  @media (max-width:560px){ .wrap{padding:0 18px} body{font-size:16px} }
+
+  /* Scroll progress */
+  .progress{position:fixed; top:0; left:0; height:3px; width:0%; background:var(--accent); z-index:60}
+
+  /* Header */
+  .topbar{position:sticky; top:0; z-index:50; background:color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter:blur(14px) saturate(1.3); -webkit-backdrop-filter:blur(14px) saturate(1.3); border-bottom:1px solid var(--line); transition:box-shadow .3s var(--ease)}
+  .topbar.is-condensed{box-shadow:0 6px 24px rgba(15,23,32,.08)}
+  .topbar-inner{display:flex; align-items:center; justify-content:space-between; gap:16px; min-height:68px; transition:min-height .3s var(--ease)}
+  .topbar.is-condensed .topbar-inner{min-height:52px}
+  .brand{display:flex; align-items:center; gap:11px; color:var(--ink); font-weight:800; letter-spacing:-.01em}
+  .brand:hover{text-decoration:none}
+  .brand-mark{width:38px; height:38px; border-radius:50%; display:grid; place-items:center; background:linear-gradient(145deg,#dcbc6a,#b28c2e); color:#171106; font-family:"Newsreader",Georgia,serif; font-weight:700; font-size:15px; flex:0 0 auto; transition:transform .3s var(--ease)}
+  .brand:hover .brand-mark{transform:scale(1.06)}
+  .brand span{font-size:15.5px}
+  .nav{display:flex; gap:2px; flex-wrap:wrap; justify-content:flex-end}
+  .nav a{color:var(--ink-2); font-size:14px; font-weight:600; padding:9px 12px; border-radius:999px; min-height:40px; display:inline-flex; align-items:center; position:relative; transition:background .25s,color .25s}
+  .nav a:hover{background:var(--surface-2); text-decoration:none}
+  .nav a.active{color:var(--accent-ink); background:var(--accent-soft)}
+  @media (max-width:760px){ .nav a{padding:8px 9px; font-size:13.5px} .brand span{display:none} }
+
+  /* Reveal — only hidden when JS is on, so no-JS stays fully readable */
+  html.js .reveal{opacity:0; transform:translateY(22px)}
+  html.js .reveal.is-visible{opacity:1; transform:none; transition:opacity .75s var(--ease),transform .75s var(--ease); transition-delay:var(--d,0ms)}
+
+  /* Hero */
+  .hero{position:relative; padding:72px 0 0; isolation:isolate}
+  .hero::before{content:""; position:absolute; inset:-40px -10% auto -10%; height:560px; z-index:-1; pointer-events:none;
+    background:
+      radial-gradient(560px 320px at 12% 8%, color-mix(in srgb, var(--accent) 14%, transparent), transparent 65%),
+      radial-gradient(520px 300px at 88% 0%, color-mix(in srgb, #6d8ab0 13%, transparent), transparent 65%),
+      radial-gradient(700px 380px at 55% 90%, color-mix(in srgb, var(--accent) 7%, transparent), transparent 70%);
+    animation:meshDrift 18s ease-in-out infinite alternate}
+  @keyframes meshDrift{from{transform:translate3d(0,0,0) scale(1)} to{transform:translate3d(0,18px,0) scale(1.03)}}
+  .hero-grid{display:grid; grid-template-columns:1.55fr .85fr; gap:44px; align-items:start}
+  @media (max-width:880px){ .hero-grid{grid-template-columns:1fr} .hero{padding-top:44px} }
+  .eyebrow{display:inline-flex; align-items:center; gap:8px; font-size:12.5px; font-weight:700; letter-spacing:.11em; text-transform:uppercase; color:var(--accent-ink); background:var(--accent-soft); border:1px solid color-mix(in srgb, var(--accent) 20%, transparent); padding:7px 12px; border-radius:999px}
+  .eyebrow i{width:7px; height:7px; border-radius:50%; background:var(--accent); display:inline-block; animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 color-mix(in srgb, var(--accent) 35%, transparent)} 50%{box-shadow:0 0 0 6px transparent}}
+  h1{font-family:"Newsreader",Georgia,serif; font-size:clamp(48px,6.5vw,72px); line-height:.96; letter-spacing:-.025em; margin:20px 0 14px; font-weight:700}
+  .headline{font-size:clamp(19px,2.6vw,25px); line-height:1.32; font-weight:600; color:var(--ink-2); margin:0; max-width:660px}
+  .headline strong{color:var(--accent-ink); font-weight:800}
+  .location{margin:16px 0 0; color:var(--muted); font-size:15.5px; display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+  .status{margin:24px 0 0; padding:18px 20px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-sm); color:var(--ink-2); font-size:15.5px; line-height:1.65; max-width:690px; box-shadow:var(--shadow)}
+  .status b{color:var(--ink)}
+  .cta-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:24px}
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:9px; min-height:50px; padding:0 20px; border-radius:999px; font-weight:700; font-size:15px; border:1px solid transparent; cursor:pointer; transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s,filter .25s}
+  .btn:hover{text-decoration:none; transform:translateY(-2px); box-shadow:var(--shadow-lg)}
+  .btn:active{transform:translateY(0)}
+  .btn-primary{background:linear-gradient(145deg,#dcbc6a,#bd9738); color:#171106; border-color:#dcbc6a}
+  .btn-secondary{background:var(--surface); color:var(--ink); border-color:var(--line-strong)}
+  .btn svg{width:17px; height:17px; flex:0 0 auto}
+  .contact-mini{margin-top:16px; color:var(--muted); font-size:14.5px; display:flex; flex-wrap:wrap; gap:8px 18px}
+  .contact-mini a{color:var(--ink-2); font-weight:600}
+
+  /* Portrait */
+  .portrait-card{background:var(--surface); border:1px solid var(--line); border-radius:24px; padding:30px 24px 22px; box-shadow:var(--shadow); text-align:center; position:relative; overflow:hidden; transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+  .portrait-card:hover{transform:translateY(-4px); box-shadow:var(--shadow-lg)}
+  .portrait-card::before{content:""; position:absolute; inset:0 0 auto 0; height:6px; background:linear-gradient(90deg,var(--accent),color-mix(in srgb, var(--accent) 55%, var(--gold)))}
+  .avatar-wrap{display:flex; justify-content:center; padding-top:6px}
+  .avatar{width:176px; height:176px; border-radius:50%; display:grid; place-items:center; background:radial-gradient(circle at 32% 28%, #22334d, #0d1523 74%); color:var(--gold-bright); border:6px solid var(--surface); outline:1px solid var(--gold); box-shadow:0 12px 30px rgba(0,0,0,.45); overflow:hidden}
+  .avatar span{font-family:"Newsreader",Georgia,serif; font-weight:700; font-size:62px; line-height:1}
+  .avatar img{width:100%; height:100%; object-fit:cover; display:block}
+  .portrait-name{font-family:"Newsreader",Georgia,serif; font-size:23px; font-weight:700; margin:16px 0 2px; line-height:1.15}
+  .portrait-role{color:var(--muted); font-size:14.5px; line-height:1.45; margin:0}
+  .portrait-meta{margin-top:18px; padding-top:16px; border-top:1px solid var(--line); display:grid; grid-template-columns:1fr 1fr; gap:12px; text-align:left}
+  .portrait-meta div b{display:block; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:2px}
+  .portrait-meta div span{font-size:14.5px; font-weight:600; color:var(--ink-2)}
+  .portrait-links{display:flex; gap:8px; margin-top:16px}
+  .portrait-links a{flex:1; min-height:44px; display:inline-flex; align-items:center; justify-content:center; border-radius:999px; font-weight:700; font-size:14px; border:1px solid var(--line-strong); color:var(--ink); background:var(--surface-2); transition:transform .25s var(--ease),filter .25s}
+  .portrait-links a:first-child{background:linear-gradient(145deg,#dcbc6a,#bd9738); color:#171106; border-color:#dcbc6a}
+  .portrait-links a:hover{text-decoration:none; transform:translateY(-1px); filter:brightness(1.04)}
+
+  /* Stats */
+  .stats{margin-top:44px; background:linear-gradient(160deg,#111c2e,#0b1220); border:1px solid var(--line-strong); color:#eef2f6; border-radius:22px; padding:10px; box-shadow:var(--shadow-lg); position:relative; overflow:hidden}
+  .stats::after{content:""; position:absolute; inset:0; pointer-events:none; background:radial-gradient(420px 180px at 15% 0%, rgba(230,200,124,.10), transparent 60%)}
+  .stats-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:2px; position:relative; z-index:1}
+  @media (min-width:920px){ .stats-grid{grid-template-columns:repeat(6,1fr)} }
+  @media (max-width:520px){ .stats-grid{grid-template-columns:repeat(2,1fr)} }
+  .stat{padding:20px 14px 18px; text-align:center; border-radius:14px; transition:background .3s}
+  .stat:hover{background:rgba(230,200,124,.06)}
+  .stat strong{display:block; font-family:"Newsreader",Georgia,serif; font-size:28px; line-height:1; font-weight:700; letter-spacing:-.01em; font-variant-numeric:tabular-nums; color:var(--gold-bright)}
+  .stat span{display:block; margin-top:8px; font-size:12.5px; line-height:1.35; color:#b9c4d1; font-weight:600}
+
+  /* Sections */
+  section{padding:68px 0 0}
+  .section-head{display:flex; align-items:baseline; justify-content:space-between; gap:16px; margin-bottom:22px; border-bottom:1px solid var(--line); padding-bottom:14px; position:relative}
+  .section-head::after{content:""; position:absolute; left:0; bottom:-1px; width:64px; height:2px; background:var(--accent); border-radius:2px}
+  .section-head h2{font-family:"Newsreader",Georgia,serif; font-size:clamp(28px,3.4vw,34px); line-height:1.08; margin:0; font-weight:700; letter-spacing:-.015em}
+  .section-head p{margin:0; color:var(--muted); font-size:14px; font-weight:600; white-space:nowrap}
+  @media (max-width:560px){ .section-head{flex-direction:column; gap:4px} .section-head p{white-space:normal} section{padding-top:52px} }
+  .card-hover{transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s}
+  .card-hover:hover{transform:translateY(-4px); box-shadow:var(--shadow-lg); border-color:var(--line-strong)}
+
+  .about-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:28px; box-shadow:var(--shadow); font-size:17px; line-height:1.78; color:var(--ink-2)}
+  .about-card p{margin:0} .about-card p + p{margin-top:14px}
+  @media (max-width:560px){ .about-card{padding:20px} }
+
+  /* Architecture */
+  .arch-intro{background:linear-gradient(160deg,#142034,#0c1424); border:1px solid var(--line-strong); color:#e6ebf2; border-radius:var(--radius); padding:26px 28px; box-shadow:var(--shadow-lg); font-size:16.5px; line-height:1.72; position:relative; overflow:hidden}
+  .arch-intro::after{content:""; position:absolute; inset:0; pointer-events:none; background:radial-gradient(380px 160px at 90% 0%, rgba(230,200,124,.09), transparent 60%)}
+  .arch-intro p{margin:0; position:relative; z-index:1} .arch-intro p + p{margin-top:10px}
+  .arch-intro strong{color:var(--gold-bright)}
+  .arch-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px}
+  @media (max-width:760px){ .arch-grid{grid-template-columns:1fr} .arch-intro{padding:20px} }
+  .arch-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:22px; box-shadow:var(--shadow)}
+  .arch-card h3{margin:0 0 8px; font-size:16px; line-height:1.35; font-weight:700; color:var(--ink); display:flex; align-items:flex-start; gap:9px}
+  .arch-card h3 i{width:8px; height:8px; border-radius:50%; background:var(--accent); display:inline-block; flex:0 0 auto; margin-top:7px}
+  .arch-card p{margin:0; color:var(--ink-2); font-size:15px; line-height:1.65} .arch-card p b{color:var(--ink)}
+
+  /* Timeline */
+  .timeline{position:relative; margin-left:6px}
+  .timeline::before{content:""; position:absolute; left:11px; top:8px; bottom:8px; width:2px; background:linear-gradient(var(--accent),var(--line-strong)); border-radius:2px}
+  .job{position:relative; padding:0 0 24px 40px}
+  .job:last-child{padding-bottom:4px}
+  .job::before{content:""; position:absolute; left:4px; top:24px; width:16px; height:16px; border-radius:50%; background:var(--surface); border:3px solid var(--accent); transition:transform .3s var(--ease),background .3s; z-index:1}
+  .job:hover::before{transform:scale(1.3); background:var(--accent)}
+  .job-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:24px 24px 18px; box-shadow:var(--shadow)}
+  @media (max-width:560px){ .job{padding-left:30px} .job-card{padding:18px 16px 14px} .timeline::before{left:8px} .job::before{left:1px} }
+  .job-top{display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px 16px; align-items:baseline}
+  .job h3{margin:0; font-size:18.5px; line-height:1.3; font-weight:800; color:var(--ink)}
+  .job h3 span{color:var(--accent-ink); font-weight:600}
+  .date{font-size:13px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--muted); white-space:nowrap}
+  .job-sub{margin:5px 0 0; color:var(--muted); font-size:14.5px; line-height:1.5}
+  .job ul{margin:14px 0 4px; padding-left:18px; color:var(--ink-2)}
+  .job li{margin:8px 0; line-height:1.62}
+  .job li::marker{color:var(--accent)}
+  .job li b{color:var(--ink)}
+
+  /* Skills + filters */
+  .skill-filters{display:none; flex-wrap:wrap; gap:8px; margin-bottom:18px}
+  html.js .skill-filters{display:flex}
+  .filter-btn{appearance:none; border:1px solid var(--line-strong); background:var(--surface); color:var(--ink-2); font:inherit; font-size:13.5px; font-weight:700; min-height:38px; padding:7px 14px; border-radius:999px; cursor:pointer; transition:all .25s var(--ease)}
+  .filter-btn:hover{transform:translateY(-1px); border-color:var(--accent)}
+  .filter-btn[aria-pressed="true"]{background:linear-gradient(145deg,#dcbc6a,#bd9738); color:#171106; border-color:#dcbc6a}
+  .skills-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+  @media (max-width:760px){ .skills-grid{grid-template-columns:1fr} }
+  .skill-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:22px; box-shadow:var(--shadow)}
+  .skill-card.is-hidden{display:none}
+  .skill-card h3{margin:0 0 4px; font-size:15.5px; font-weight:800; color:var(--ink); display:flex; align-items:center; gap:9px}
+  .skill-card h3 i{width:8px; height:8px; border-radius:50%; background:var(--accent); display:inline-block; flex:0 0 auto}
+  .skill-card > p{margin:0 0 12px; color:var(--muted); font-size:13.5px}
+  .chips{display:flex; flex-wrap:wrap; gap:7px}
+  .chip{display:inline-flex; align-items:center; min-height:32px; padding:5px 11px; border-radius:999px; background:var(--surface-2); border:1px solid var(--line); font-size:13.5px; font-weight:600; color:var(--ink-2); line-height:1.3; transition:transform .2s var(--ease),border-color .2s,background .2s}
+  .chip:hover{transform:translateY(-1.5px); border-color:var(--accent)}
+  .chip.hot{background:var(--accent-soft); border-color:color-mix(in srgb, var(--accent) 24%, transparent); color:var(--accent-ink)}
+
+  /* Education */
+  .edu-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+  @media (max-width:700px){ .edu-grid{grid-template-columns:1fr} }
+  .edu-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:22px; box-shadow:var(--shadow); display:flex; gap:16px}
+  .edu-icon{width:48px; height:48px; border-radius:12px; background:var(--accent-soft); color:var(--accent-ink); display:grid; place-items:center; flex:0 0 auto; font-family:"Newsreader",Georgia,serif; font-weight:700; font-size:18px}
+  .edu-card h3{margin:0; font-size:16.5px; line-height:1.35}
+  .edu-card p{margin:4px 0 0; color:var(--muted); font-size:14.5px; line-height:1.55}
+
+  /* Awards & Publications */
+  .award-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+  @media (max-width:700px){ .award-grid{grid-template-columns:1fr} }
+  .award-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:22px; box-shadow:var(--shadow); display:flex; gap:16px}
+  .award-icon{width:48px; height:48px; border-radius:12px; background:var(--accent-soft); color:var(--accent-ink); display:grid; place-items:center; flex:0 0 auto}
+  .award-icon svg{width:24px; height:24px}
+  .award-card h3{margin:0; font-size:16.5px; line-height:1.35}
+  .award-card p{margin:4px 0 0; color:var(--muted); font-size:14.5px; line-height:1.55}
+  .award-card p em{color:var(--ink-2)}
+
+  /* Contact / footer */
+  .contact-band{margin-top:68px; background:var(--surface); border:1px solid var(--line); border-radius:24px; box-shadow:var(--shadow-lg); padding:34px; display:grid; grid-template-columns:1.2fr .8fr; gap:26px; align-items:center; position:relative; overflow:hidden}
+  .contact-band::before{content:""; position:absolute; inset:0 0 auto 0; height:5px; background:linear-gradient(90deg,var(--accent),color-mix(in srgb, var(--accent) 55%, var(--gold)))}
+  @media (max-width:760px){ .contact-band{grid-template-columns:1fr; padding:24px} }
+  .contact-band h2{font-family:"Newsreader",Georgia,serif; font-size:29px; margin:0 0 8px; line-height:1.15; letter-spacing:-.01em}
+  .contact-band p{margin:0; color:var(--muted); line-height:1.62}
+  .contact-actions{display:flex; flex-direction:column; gap:10px}
+  .contact-actions .btn{width:100%}
+  footer{padding:30px 0 40px; color:var(--muted); font-size:13.5px}
+  .footer-inner{display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px 20px; border-top:1px solid var(--line); padding-top:18px}
+  footer a{color:var(--ink-2); font-weight:600}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{transition:none !important; animation:none !important}
+    html.js .reveal{opacity:1; transform:none}
+  }
+</style>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="topbar" id="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#top" aria-label="Aniket Bochare — home">
+      <span class="brand-mark" aria-hidden="true">AB</span>
+      <span>Aniket Bochare</span>
+    </a>
+    <nav class="nav" aria-label="Page sections">
+      <a href="#about" data-nav="about">About</a>
+      <a href="#architecture" data-nav="architecture">Architecture</a>
+      <a href="#experience" data-nav="experience">Experience</a>
+      <a href="#skills" data-nav="skills">Skills</a>
+      <a href="#education" data-nav="education">Education</a>
+      <a href="#awards" data-nav="awards">Awards</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-grid">
+        <div class="reveal is-visible">
+          <span class="eyebrow"><i></i> Open to new opportunities</span>
+          <h1>Aniket Bochare</h1>
+          <p class="headline">Senior Engineering Manager · Technical Architect &amp; Leader<br><strong>GenAI &amp; Conversational AI Platforms</strong> — Engineering leadership and hands-on architecture</p>
+          <p class="location">
+            <span>📍 Kansas City, KS area · Overland Park, KS</span>
+            <span aria-hidden="true">·</span>
+            <span>Remote US preferred</span>
+          </p>
+          <div class="status">
+            Hands-on engineering leader and technical architect with <b>15+ years</b> across conversational AI, CCaaS, and healthcare platforms — a manager who still designs and codes daily, and an architect who leads teams and delivery. <b>Open to Senior Engineering Manager and Staff / Principal (Technical Architect / Leader) roles</b> in GenAI, agentic platforms, and platform engineering (Remote US preferred).
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="mailto:aniket.bochare@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              Email me
+            </a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/aniketbochare/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>
+              LinkedIn
+            </a>
+            <a class="btn btn-secondary" href="tel:+12024316927">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              202-431-6927
+            </a>
+          </div>
+          <div class="contact-mini">
+            <span><a href="mailto:aniket.bochare@gmail.com">aniket.bochare@gmail.com</a></span>
+            <span><a href="https://www.linkedin.com/in/aniketbochare/" target="_blank" rel="noopener">linkedin.com/in/aniketbochare</a></span>
+          </div>
+        </div>
+
+        <aside class="portrait-card" aria-label="Profile">
+          <div class="avatar-wrap">
+            <div class="avatar"><img src="assets/aniket-bochare-headshot.png" alt="Portrait of Aniket Bochare" width="800" height="800"></div>
+          </div>
+          <p class="portrait-name">Aniket Bochare</p>
+          <p class="portrait-role">Senior Engineering Manager · Technical Architect &amp; Leader<br>GenAI &amp; Conversational AI Platforms</p>
+          <div class="portrait-meta">
+            <div><b>Location</b><span>Overland Park, KS</span></div>
+            <div><b>Experience</b><span>15+ years</span></div>
+            <div><b>Focus</b><span>GenAI · Architecture · CCaaS</span></div>
+            <div><b>Team</b><span>9 engineers, global</span></div>
+          </div>
+          <div class="portrait-links">
+            <a href="mailto:aniket.bochare@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/aniketbochare/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
+        </aside>
+      </div>
+
+      <!-- STATS -->
+      <div class="stats reveal" aria-label="Highlights">
+        <div class="stats-grid">
+          <div class="stat"><strong data-count="15" data-suffix="+">15+</strong><span>Years experience</span></div>
+          <div class="stat"><strong data-count="9">9</strong><span>Engineers led globally</span></div>
+          <div class="stat"><strong data-count="47" data-prefix="~" data-suffix="M">~47M</strong><span>Conversations / month</span></div>
+          <div class="stat"><strong data-count="244" data-prefix="$" data-suffix="M">$244M</strong><span>Revenue platform</span></div>
+          <div class="stat"><strong data-count="99.9" data-decimals="1" data-suffix="%">99.9%</strong><span>Uptime at 1M+ daily requests</span></div>
+          <div class="stat"><strong data-count="55" data-suffix="%">55%</strong><span>p95 latency cut</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" data-section="about">
+      <div class="section-head reveal">
+        <h2>About</h2>
+        <p>Architect &amp; Leader · Still codes daily</p>
+      </div>
+      <div class="about-card card-hover reveal">
+        <p>Hands-on engineering leader <strong>and</strong> technical architect with 15+ years across conversational AI, contact-center (CCaaS), and healthcare EMR platforms. As Senior Engineering Manager, he led nine engineers globally on a ~$1M annual people budget and owned the Conversation Builder roadmap (~47M conversations a month, $244M revenue). As hands-on architect for that same platform, he owned system design end-to-end — daily hands-on design and production Java / Python shipping alongside architecture ownership.</p>
+        <p>That dual identity runs through his whole career: he architected the shift from NLU bots to GenAI, RAG, and an LLM gateway while lowering cloud and LLM spend, led architecture reviews, and still codes daily. Equally at home setting technical direction and building the system as he is hiring, mentoring, and leading a team to ship it — targeting both Senior Engineering Manager and Staff / Principal Technical Architect / Leader roles.</p>
+      </div>
+    </section>
+
+    <!-- TECHNICAL LEADERSHIP & ARCHITECTURE -->
+    <section id="architecture" data-section="architecture">
+      <div class="section-head reveal">
+        <h2>Technical Leadership &amp; Architecture</h2>
+        <p>Hands-on architect · Daily coder</p>
+      </div>
+      <div class="arch-intro reveal">
+        <p><strong>Hands-on architect and daily coder for the GenAI platform throughout his LivePerson tenure.</strong> His reports were in India while he worked US hours — so in their absence, he coded himself. Daily hands-on system design and production Java / Python shipping sat alongside architecture ownership, not instead of it.</p>
+        <p>Staff / Principal-level architecture depth with Senior Manager-level leadership: the same person who sets the design also leads the team that delivers it.</p>
+      </div>
+      <div class="arch-grid">
+        <div class="arch-card card-hover reveal">
+          <h3><i></i> GenAI Platform Architecture</h3>
+          <p>Architected the <b>LLM gateway, RAG pipelines, agent orchestration</b> (AI Agent Routing, tool calling, Prompt Library) and <b>evals &amp; guardrails</b> — RAGAs quality gates and protections against hallucination and prompt injection, holding 99.9% uptime and under 900ms p95 at 1M+ daily requests on Ray Serve.</p>
+        </div>
+        <div class="arch-card card-hover reveal" style="--d:60ms">
+          <h3><i></i> Architecture Leadership</h3>
+          <p><b>Architecture review leadership</b> across 20+ Tier-1 services: system design, trade-off decisions, and release governance that cut release-driven high-severity incidents 50% — paired with hands-on prototyping and production code, not review alone.</p>
+        </div>
+        <div class="arch-card card-hover reveal">
+          <h3><i></i> Distributed Systems &amp; Resiliency</h3>
+          <p>Designed the <b>Kafka event-driven message-resiliency pipeline</b> (response times down 70–80% for migrated brands) and ended recurring Redis crashes with a postmortem-driven <b>multi-master Redis redesign</b> and a 20+ service move to Redis Cloud.</p>
+        </div>
+        <div class="arch-card card-hover reveal" style="--d:60ms">
+          <h3><i></i> Cloud &amp; Data Architecture</h3>
+          <p>Led <b>GCP migration</b> architecture — <b>GKE, Vertex AI, Pub/Sub, BigQuery</b> — including the Azure OpenAI to Gemini (Vertex AI) migration across NA, EMEA and APJ that cut LLM cost 20%+; GCP migration and Elasticsearch 6→8 together saved ~$1.5M.</p>
+        </div>
+        <div class="arch-card card-hover reveal">
+          <h3><i></i> Security &amp; Identity Architecture</h3>
+          <p>Designed <b>OAuth 2.0 and DPoP identity architecture</b> for a top bank and migrated customer bots from OAuth1 to OAuth2 — identity, JWT / SSO, and compliance-aware design for regulated, enterprise platforms.</p>
+        </div>
+        <div class="arch-card card-hover reveal" style="--d:60ms">
+          <h3><i></i> Platform Modernization — Cerner</h3>
+          <p>At Cerner, <b>architect and technical lead for the Orion UI platform modernization</b> for Physician Documentation (React / Node.js across iOS / Android / web) on the EMR platform — architecture ownership and technical leadership long before the manager title.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" data-section="experience">
+      <div class="section-head reveal">
+        <h2>Experience</h2>
+        <p>2008 — 2026 · Full career timeline</p>
+      </div>
+      <div class="timeline">
+
+        <article class="job reveal">
+          <div class="job-card card-hover">
+            <div class="job-top">
+              <h3>LivePerson <span>(now SoundHound AI)</span></h3>
+              <span class="date">May 2022 – Nov 2026</span>
+            </div>
+            <p class="job-sub"><strong style="color:var(--ink)">Senior Manager, Software Development Engineering</strong> — Promoted from SDE3 (IC) to SDM to Senior Manager. Owned Conversation Builder, a bot developer platform for external brands. Hands-on architect and daily coder for the GenAI platform throughout.</p>
+            <ul>
+              <li><b>GenAI Platformization:</b> Moved the roadmap from deterministic NLU bots to agentic AI flows (AI Agent Routing, tool calling, Prompt Library), cutting p95 latency 55% (20s to 9s) at a top bank.</li>
+              <li><b>LLM Cost:</b> Cut LLM infrastructure cost 20%+ by co-leading the Azure OpenAI to Gemini (Vertex AI) migration across NA, EMEA and APJ, retiring Azure PTU capacity.</li>
+              <li><b>AI Quality and Scale:</b> Held 99.9% uptime and under 900ms p95 at 1M+ daily requests on Ray Serve, with RAGAs gates and guardrails against hallucination and prompt injection.</li>
+              <li><b>Resiliency:</b> Drove the Kafka event-driven message-resiliency pipeline (response times down 70–80% for migrated brands) and cut release-driven high-severity incidents 50% across 20+ Tier-1 services.</li>
+              <li><b>Cloud and Data:</b> Ended recurring Redis crashes with a postmortem-driven multi-master redesign and a 20+ service Redis Cloud move; GCP migration and ES6→ES8 saved ~$1.5M.</li>
+              <li><b>Security:</b> Delivered an OAuth 2.0 and DPoP identity integration for a top bank; migrated customer bots from OAuth1 to OAuth2.</li>
+              <li><b>Org:</b> Hired 10, promoted 3, retained 8 through restructuring; escalation owner for top accounts representing one-third of volume.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-card card-hover">
+            <div class="job-top">
+              <h3>Cerner Corporation <span>(now Oracle)</span></h3>
+              <span class="date">Sep 2013 – May 2022</span>
+            </div>
+            <p class="job-sub"><strong style="color:var(--ink)">Software Engineer IV</strong></p>
+            <ul>
+              <li>Promoted from Software Engineer II to III to IV; architect and technical lead for an offshore contractor team — owned requirement validation, technical designs, estimates, and releases.</li>
+              <li><b>Platform Modernization:</b> Architected Orion UI for Physician Documentation, migrating legacy desktop components to a React and Node.js platform serving iOS, Android and web, on Cerner’s EMR platform (~$5.8B revenue in 2021).</li>
+              <li><b>Clinical Workflows:</b> Built ED tracking lists, autosave, track changes and faxing on Java services.</li>
+              <li><b>Talent Development:</b> Mentored Senior engineers and DevAcademy cohorts; interviewed candidates for engineering roles.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-card card-hover">
+            <div class="job-top">
+              <h3>REI Systems</h3>
+              <span class="date">Jul 2012 – Sep 2013</span>
+            </div>
+            <p class="job-sub"><strong style="color:var(--ink)">Associate Database Engineer</strong> — Sterling, VA</p>
+            <ul>
+              <li><b>Production Databases:</b> Operated production SQL Server databases supporting HRSA’s Electronic Handbooks (EHBs) — the system HRSA uses to manage grants for health systems.</li>
+              <li><b>Database Engineering:</b> Database design and data modeling, T-SQL development, and performance tuning for production workloads.</li>
+              <li><b>Reliability:</b> Owned backup and disaster-recovery processes and root-cause analysis of production bottlenecks.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-card card-hover">
+            <div class="job-top">
+              <h3>UMBC</h3>
+              <span class="date">Aug 2010 – Jun 2012</span>
+            </div>
+            <p class="job-sub"><strong style="color:var(--ink)">Graduate Research and Teaching Assistant</strong> — Baltimore, MD</p>
+            <ul>
+              <li><b>ML Research:</b> Trained and evaluated five supervised machine-learning classifiers to predict diabetes and breast cancer risk from genomic and clinical data — the work behind his published research (see Awards &amp; Publications).</li>
+              <li><b>Research Data:</b> Managed a 1 TB medical database using MySQL Cluster to support research data access.</li>
+              <li><b>Teaching:</b> Taught and mentored graduate students as a Teaching Assistant while completing his MS in Computer Science.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-card card-hover">
+            <div class="job-top">
+              <h3>TCS <span>(Tata Consultancy Services)</span></h3>
+              <span class="date">Sep 2008 – Jul 2010</span>
+            </div>
+            <p class="job-sub"><strong style="color:var(--ink)">Software Engineer</strong> — Mumbai, India · Early career.</p>
+            <ul>
+              <li><b>Bank Data Systems:</b> Built C++ and Oracle backends for bank data cleansing — high-volume financial data quality processing.</li>
+              <li><b>Trading Systems:</b> Built stock-exchange order validation and matching components, where correctness and latency are critical.</li>
+              <li><b>Delivery:</b> Translated business requirements into implementation tasks and supported delivery for enterprise clients.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" data-section="skills">
+      <div class="section-head reveal">
+        <h2>Skills</h2>
+        <p>GenAI · Architecture · Leadership</p>
+      </div>
+      <div class="skill-filters reveal" role="group" aria-label="Filter skills">
+        <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="filter-btn" data-filter="genai" aria-pressed="false">GenAI &amp; Agents</button>
+        <button type="button" class="filter-btn" data-filter="platform" aria-pressed="false">Platform &amp; Cloud</button>
+        <button type="button" class="filter-btn" data-filter="security" aria-pressed="false">Security &amp; Identity</button>
+        <button type="button" class="filter-btn" data-filter="leadership" aria-pressed="false">Leadership</button>
+        <button type="button" class="filter-btn" data-filter="ai-eng" aria-pressed="false">AI-Assisted Engineering</button>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card card-hover reveal" data-category="genai">
+          <h3><i></i> GenAI &amp; Agents</h3>
+          <p>Agentic systems, RAG, LLM platform and evaluation</p>
+          <div class="chips">
+            <span class="chip hot">Agentic AI — orchestration &amp; tool calling</span>
+            <span class="chip">Human-in-the-loop routing</span>
+            <span class="chip hot">RAG &amp; vector search</span>
+            <span class="chip">Elasticsearch</span><span class="chip">Pinecone</span>
+            <span class="chip hot">LLM gateway</span>
+            <span class="chip">LLMOps — prompts, versioning, cost</span>
+            <span class="chip">Model migration</span>
+            <span class="chip">Evals &amp; guardrails</span>
+            <span class="chip">LangChain</span><span class="chip">MCP servers</span>
+            <span class="chip">Gemini</span><span class="chip">Azure OpenAI</span>
+          </div>
+        </div>
+
+        <div class="skill-card card-hover reveal" data-category="platform">
+          <h3><i></i> Platform &amp; Cloud</h3>
+          <p>Distributed systems at scale, cloud-native delivery</p>
+          <div class="chips">
+            <span class="chip hot">Java — Spring Boot</span>
+            <span class="chip hot">Python — FastAPI</span>
+            <span class="chip">Node.js</span><span class="chip">React</span><span class="chip">TypeScript</span>
+            <span class="chip">Microservices</span>
+            <span class="chip">Kafka — event-driven</span>
+            <span class="chip">Redis</span><span class="chip">Cassandra</span>
+            <span class="chip hot">GCP — GKE, Vertex AI, Pub/Sub, BigQuery</span>
+            <span class="chip">Kubernetes</span>
+            <span class="chip">OpenTelemetry</span><span class="chip">Grafana</span><span class="chip">Splunk</span>
+            <span class="chip">24×7 on-call</span>
+          </div>
+        </div>
+
+        <div class="skill-card card-hover reveal" data-category="security">
+          <h3><i></i> Security &amp; Identity</h3>
+          <p>Identity, compliance and regulated platforms</p>
+          <div class="chips">
+            <span class="chip hot">OAuth 2.0</span><span class="chip hot">DPoP</span>
+            <span class="chip">IdP integration</span><span class="chip">JWT</span><span class="chip">SSO</span>
+            <span class="chip">GDPR</span><span class="chip">PCI</span>
+            <span class="chip">Healthcare compliance</span>
+          </div>
+        </div>
+
+        <div class="skill-card card-hover reveal" data-category="leadership">
+          <h3><i></i> Leadership</h3>
+          <p>Teams, architecture and delivery governance</p>
+          <div class="chips">
+            <span class="chip">Architecture review</span>
+            <span class="chip">Release governance</span>
+            <span class="chip">Performance management</span>
+            <span class="chip">Stakeholder management</span>
+            <span class="chip">Budgeting (~$1M)</span>
+            <span class="chip">Hiring &amp; mentoring</span>
+          </div>
+        </div>
+
+        <div class="skill-card card-hover reveal" data-category="ai-eng" style="grid-column:1 / -1">
+          <h3><i></i> AI-Assisted Engineering</h3>
+          <p>How the team builds day to day</p>
+          <div class="chips">
+            <span class="chip hot">Claude Code — daily</span>
+            <span class="chip">Gemini coding tools</span>
+            <span class="chip">Microsoft Copilot — incl. code review</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" data-section="education">
+      <div class="section-head reveal">
+        <h2>Education</h2>
+        <p>Computer Science &amp; Engineering</p>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card card-hover reveal">
+          <div class="edu-icon" aria-hidden="true">MS</div>
+          <div>
+            <h3>MS, Computer Science — 2012</h3>
+            <p>University of Maryland, Baltimore County (UMBC)</p>
+          </div>
+        </div>
+        <div class="edu-card card-hover reveal" style="--d:60ms">
+          <div class="edu-icon" aria-hidden="true">BE</div>
+          <div>
+            <h3>BE, Computer Engineering — 2008, First Class</h3>
+            <p>Ramrao Adik Institute of Technology (University of Mumbai)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AWARDS & PUBLICATIONS -->
+    <section id="awards" data-section="awards">
+      <div class="section-head reveal">
+        <h2>Awards &amp; Publications</h2>
+        <p>Recognition &amp; Research</p>
+      </div>
+      <div class="award-grid">
+        <div class="award-card card-hover reveal">
+          <div class="award-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg>
+          </div>
+          <div>
+            <h3>Eight Cerner Awards</h3>
+            <p>Recognized eight times at Cerner for development leadership, code quality, and innovation.</p>
+          </div>
+        </div>
+        <div class="award-card card-hover reveal" style="--d:60ms">
+          <div class="award-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7v2h18V7L12 2z"/><path d="M5 9v7"/><path d="M10 9v7"/><path d="M14 9v7"/><path d="M19 9v7"/><path d="M3 20h18"/><path d="M3 16h18v4H3z"/></svg>
+          </div>
+          <div>
+            <h3>Cerner Development Architect Program</h3>
+            <p>Selected for Cerner’s Development Architect program — formal recognition of architecture leadership on the EMR platform.</p>
+          </div>
+        </div>
+        <div class="award-card card-hover reveal">
+          <div class="award-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-3.5"/><path d="M22 10v6"/></svg>
+          </div>
+          <div>
+            <h3>IBM Fellowship</h3>
+            <p>Awarded the IBM Fellowship during his graduate studies at UMBC.</p>
+          </div>
+        </div>
+        <div class="award-card card-hover reveal" style="--d:60ms">
+          <div class="award-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <div>
+            <h3>Published Research — Co-author</h3>
+            <p><em>“Integrating domain knowledge in supervised machine learning to assess the risk of breast cancer.”</em> From his UMBC research applying supervised ML classifiers to genomic and clinical data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <div class="contact-band" id="contact" data-section="contact">
+      <div>
+        <h2>Let’s talk about your next platform team.</h2>
+        <p>I’m available for Senior Engineering Manager and Staff / Principal (Technical Architect / Leader) roles in GenAI, agentic platforms, and platform engineering — Remote US preferred, based in the Kansas City area.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:aniket.bochare@gmail.com">✉ &nbsp;aniket.bochare@gmail.com</a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/aniketbochare/" target="_blank" rel="noopener">LinkedIn — /in/aniketbochare ↗</a>
+        <a class="btn btn-secondary" href="tel:+12024316927">Call — 202-431-6927</a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <span>© 2026 Aniket Bochare · Overland Park, KS</span>
+        <span><a href="mailto:aniket.bochare@gmail.com">Email</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/aniketbochare/" target="_blank" rel="noopener">LinkedIn</a> &nbsp;·&nbsp; <a href="#top">Back to top ↑</a></span>
+      </div>
+    </footer>
+
+  </div>
+</main>
+
+<script>
+(function(){
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Sticky nav condense + scroll progress */
+  var topbar = document.getElementById('topbar');
+  var progress = document.getElementById('progress');
+  var ticking = false;
+  function onScroll(){
+    var y = window.scrollY || 0;
+    if (topbar) topbar.classList.toggle('is-condensed', y > 24);
+    if (progress) {
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      progress.style.width = (h > 0 ? Math.min(100, (y / h) * 100) : 0) + '%';
+    }
+    ticking = false;
+  }
+  window.addEventListener('scroll', function(){ if(!ticking){ ticking = true; requestAnimationFrame(onScroll); } }, {passive:true});
+  onScroll();
+
+  /* Scroll reveal */
+  var revealEls = document.querySelectorAll('.reveal');
+  if (reduced || !('IntersectionObserver' in window)) {
+    revealEls.forEach(function(el){ el.classList.add('is-visible'); });
+  } else {
+    var ro = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('is-visible'); ro.unobserve(e.target); } });
+    }, {threshold: 0.12, rootMargin: '0px 0px -40px 0px'});
+    revealEls.forEach(function(el){ if (!el.classList.contains('is-visible')) ro.observe(el); });
+  }
+
+  /* Animated counters — final values are already in the markup for no-JS */
+  function animateCount(el){
+    var target = parseFloat(el.getAttribute('data-count'));
+    if (isNaN(target)) return;
+    var decimals = parseInt(el.getAttribute('data-decimals') || '0', 10);
+    var prefix = el.getAttribute('data-prefix') || '';
+    var suffix = el.getAttribute('data-suffix') || '';
+    if (reduced) { el.textContent = prefix + target.toFixed(decimals) + suffix; return; }
+    var start = null, dur = 1400;
+    function step(ts){
+      if (!start) start = ts;
+      var p = Math.min(1, (ts - start) / dur);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = prefix + (target * eased).toFixed(decimals) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+      else el.textContent = prefix + target.toFixed(decimals) + suffix;
+    }
+    requestAnimationFrame(step);
+  }
+  var counters = document.querySelectorAll('[data-count]');
+  if (!('IntersectionObserver' in window)) {
+    counters.forEach(animateCount);
+  } else {
+    var co = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) { animateCount(e.target); co.unobserve(e.target); } });
+    }, {threshold: 0.4});
+    counters.forEach(function(el){ co.observe(el); });
+  }
+
+  /* Active section indicator in nav */
+  var navLinks = document.querySelectorAll('[data-nav]');
+  var sections = document.querySelectorAll('[data-section]');
+  if ('IntersectionObserver' in window && sections.length) {
+    var so = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) {
+          var id = e.target.getAttribute('data-section');
+          navLinks.forEach(function(l){ l.classList.toggle('active', l.getAttribute('data-nav') === id); });
+        }
+      });
+    }, {rootMargin: '-30% 0px -60% 0px'});
+    sections.forEach(function(s){ so.observe(s); });
+  }
+
+  /* Skills filter */
+  var filterBtns = document.querySelectorAll('.filter-btn');
+  var skillCards = document.querySelectorAll('.skill-card[data-category]');
+  filterBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var f = btn.getAttribute('data-filter');
+      filterBtns.forEach(function(b){ b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+      skillCards.forEach(function(card){
+        var show = (f === 'all' || card.getAttribute('data-category') === f);
+        card.classList.toggle('is-hidden', !show);
+        if (show) card.classList.add('is-visible');
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
